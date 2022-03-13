@@ -475,26 +475,26 @@ body a {
   color: #fff;
 }
 
-.lightMode {
+.light-mode {
   background-color: var(--bg-day) !important;
   color: #000 !important;
 }
 
-.lightMode a {
+.light-mode a {
   color: #000;
 }
 
-.lightMode .main__button {
+.light-mode .main__button {
   background: #efeaf4;
   -webkit-box-shadow: 0px 0px 37px rgba(40, 26, 55, 0.15);
           box-shadow: 0px 0px 37px rgba(40, 26, 55, 0.15);
 }
 
-.lightMode .nav__logo svg path {
+.light-mode .nav__logo svg path {
   fill: #000 !important;
 }
 
-.lightMode .nav__button-switch {
+.light-mode .nav__button-switch {
   display: inline-block;
   background-color: #f6f3f9 !important;
   background: url(../image/night.svg) 50% no-repeat;

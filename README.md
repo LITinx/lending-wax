@@ -1,1 +1,1 @@
-# lending-wax
+# Lending Wax

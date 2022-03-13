@@ -1,21 +1,24 @@
-let darkMode = localStorage.getItem('lightMode')
-const darkModeToggle = document.querySelector('.nav__button-switch')
-const enableDark = () => {
-	document.body.classList.add('lightMode')
+let lightMode = localStorage.getItem('lightMode')
+const lightModeToggle = document.querySelector('.nav__button-switch')
+const enableLight = () => {
+	document.body.classList.add('light-mode')
 
 	localStorage.setItem('lightMode', 'enabled')
 }
-const disableDark = () => {
-	document.body.classList.remove('lightMode')
-
+const disableLight = () => {
+	document.body.classList.remove('light-mode')
 	localStorage.setItem('lightMode', null)
 }
-darkModeToggle.addEventListener('click', () => {
-	const darkMode = localStorage.getItem('lightMode')
-	if (darkMode !== 'enabled') {
-		enableDark()
+if (lightMode === 'enabled') {
+	enableLight()
+}
+
+lightModeToggle.addEventListener('click', () => {
+	lightMode = localStorage.getItem('lightMode')
+	if (lightMode !== 'enabled') {
+		enableLight()
 	} else {
-		disableDark()
+		disableLight()
 	}
 })
 const ibg = () => {
